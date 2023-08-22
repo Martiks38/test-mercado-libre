@@ -1,0 +1,9 @@
+{
+	"singleQuote": true,
+	"prettier.printWidth": 80,
+	"tabWidth": 2,
+	"singleAttributePerLine": true,
+	"semi": false,
+	"jsxSingleQuote": true,
+	"useTabs": true
+}
