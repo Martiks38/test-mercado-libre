@@ -1,0 +1,9 @@
+{
+  "es": {
+    "searcher": {
+      "LABEL_INPUT_SEARCHER": "Ingresa lo que quieras encontrar",
+      "LABEL_BUTTON_SEARCHER": "Iniciar búsqueda",
+      "PLACEHOLDER_SEARCHER": "Nunca dejes de buscar"
+    }
+  }
+}
