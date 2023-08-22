@@ -1,22 +1,54 @@
 :root {
-  --max-width: 1200px;
-  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono', 'Roboto Mono',
-    'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro', 'Fira Mono', 'Droid Sans Mono',
-    'Courier New', monospace;
+	--max-width: 1200px;
+	--font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+		'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+		'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
+}
+
+:root {
+	--color-primary: #fee600;
 }
 
 html,
 body {
-  max-width: 100vw;
-  overflow-x: hidden;
+	max-width: 100vw;
+	overflow-x: hidden;
 }
 
 body {
-  color: rgb(26, 25, 25);
-  background: rgb(239, 237, 237);
+	display: flex;
+	flex-direction: column;
+	color: rgb(26, 25, 25);
+	background: #eee;
+	min-height: 100vh;
 }
 
 a {
-  color: inherit;
-  text-decoration: none;
+	color: inherit;
+	text-decoration: none;
+}
+
+main {
+	flex-grow: 1;
+	padding: 5rem 2rem 3rem;
+	height: 100%;
+	max-width: var(--max-width);
+	width: 100%;
+	align-self: center;
+}
+
+@font-face {
+	font-family: 'proximanova-light';
+	src: url('/fonts/proximanova-light.woff2');
+	font-display: 'fallback';
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: 'proximanova-regular';
+	src: url('/fonts/proximanova-regular.woff2') format('woff2');
+	font-display: 'fallback';
+	font-style: normal;
+	font-weight: normal;
 }
