@@ -1,0 +1,14 @@
+.header {
+	width: 100%;
+	background-color: var(--color-primary);
+}
+
+.contentHeading {
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	margin: 0 auto;
+	padding: 0.5rem 1rem;
+	max-width: var(--max-width);
+	width: 100%;
+}
