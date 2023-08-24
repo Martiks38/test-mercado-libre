@@ -6,7 +6,7 @@ import Link from 'next/link'
 import headerStyles from '@assets/styles/common/header.module.scss'
 
 import logo from '@assets/images/logo-short.png'
-import { Searcher } from '@/components/searcher'
+import { Searcher } from '@/components/Searcher'
 
 export function HeaderPage() {
 	return (
