@@ -1,6 +1,7 @@
 {
 	"extends": ["next/core-web-vitals", "prettier"],
 	"rules": {
+		"@next/next/no-img-element": "off",
 		"semi": ["error", "never"],
 		"react/jsx-max-props-per-line": [
 			"error",
@@ -11,4 +12,3 @@
 		]
 	}
 }
-
