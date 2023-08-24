@@ -1,0 +1,49 @@
+.loader {
+	--loader-size: 200px;
+
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: var(--loader-size);
+	height: var(--loader-size);
+	border-radius: 50%;
+	background-image: linear-gradient(
+		to right,
+		var(--color-primary) 36%,
+		var(--bg-body)
+	);
+	transform: translate(-50%, -50%);
+	transform-origin: 0 0;
+	animation: spin 1s linear 0s infinite forwards;
+
+	&:before {
+		content: '';
+
+		--inside: 85%;
+
+		position: absolute;
+		width: var(--inside);
+		height: var(--inside);
+		background-color: var(--bg-body);
+		border-radius: 50%;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+	}
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(0) translate(-50%, -50%);
+	}
+
+	from {
+		transform: rotate(360deg) translate(-50%, -50%);
+	}
+}
+
+@media (prefers-reduced-motion: reduce) {
+	.loader {
+		animation-duration: 3s;
+	}
+}
