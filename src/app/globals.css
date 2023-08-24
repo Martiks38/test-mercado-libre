@@ -7,6 +7,7 @@
 
 :root {
 	--color-primary: #fee600;
+	--bg-body: #eee;
 }
 
 html,
@@ -19,7 +20,7 @@ body {
 	display: flex;
 	flex-direction: column;
 	color: rgb(26, 25, 25);
-	background: #eee;
+	background-color: var(--bg-body);
 	min-height: 100vh;
 }
 
@@ -40,7 +41,7 @@ main {
 @font-face {
 	font-family: 'proximanova-light';
 	src: url('/fonts/proximanova-light.woff2');
-	font-display: 'fallback';
+	font-display: 'swap';
 	font-style: normal;
 	font-weight: normal;
 }
@@ -48,7 +49,7 @@ main {
 @font-face {
 	font-family: 'proximanova-regular';
 	src: url('/fonts/proximanova-regular.woff2') format('woff2');
-	font-display: 'fallback';
+	font-display: 'swap';
 	font-style: normal;
 	font-weight: normal;
 }
