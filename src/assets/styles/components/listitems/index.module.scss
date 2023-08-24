@@ -1,0 +1,13 @@
+.listItemsContainer {
+	margin: 0 auto;
+	padding: 1rem;
+	max-width: var(--max-width);
+	width: 100%;
+	border-radius: 2px;
+	background-color: #fff;
+}
+
+.listItems {
+	padding-left: 0;
+	list-style-type: none;
+}
