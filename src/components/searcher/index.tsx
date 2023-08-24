@@ -1,11 +1,11 @@
 'use client'
 
 import { useEffect, useId, useRef } from 'react'
+import { useRouter } from 'next/navigation'
 
 import searcherStyles from '@assets/styles/components/searcher/index.module.scss'
 
 import i18n from '@assets/i18n/translations.json'
-import { useRouter, useSearchParams } from 'next/navigation'
 
 const { LABEL_BUTTON_SEARCHER, LABEL_INPUT_SEARCHER, PLACEHOLDER_SEARCHER } =
 	i18n.es.searcher
