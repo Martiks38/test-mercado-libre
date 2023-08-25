@@ -18,6 +18,7 @@ export async function ListItems() {
 								amount={amount}
 								city={city}
 								currency={currency}
+								id={id}
 								picture={picture}
 								title={title}
 							/>

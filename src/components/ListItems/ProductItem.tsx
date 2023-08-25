@@ -5,6 +5,7 @@ interface ProductItemProps {
 	amount: number
 	city: string
 	currency: string
+	id: string
 	picture: string
 	title: string
 }
@@ -13,13 +14,14 @@ export function ProductItem({
 	amount,
 	city,
 	currency,
+	id,
 	picture,
 	title,
 }: ProductItemProps) {
 	return (
 		<li className={productItemStyles.productItem}>
 			<Link
-				href='#'
+				href={`/items/${id}`}
 				className={productItemStyles.product}
 			>
 				<img
