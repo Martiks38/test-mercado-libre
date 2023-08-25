@@ -31,7 +31,7 @@ a {
 
 main {
 	flex-grow: 1;
-	padding: 5rem 2rem 3rem;
+	padding: 5rem 1rem 3rem;
 	height: 100%;
 	max-width: var(--max-width);
 	width: 100%;
