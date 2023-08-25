@@ -1,9 +1,18 @@
 {
-  "es": {
-    "searcher": {
-      "LABEL_INPUT_SEARCHER": "Ingresa lo que quieras encontrar",
-      "LABEL_BUTTON_SEARCHER": "Iniciar búsqueda",
-      "PLACEHOLDER_SEARCHER": "Nunca dejes de buscar"
-    }
-  }
+	"es": {
+		"searcher": {
+			"LABEL_INPUT_SEARCHER": "Ingresa lo que quieras encontrar",
+			"LABEL_BUTTON_SEARCHER": "Iniciar búsqueda",
+			"PLACEHOLDER_SEARCHER": "Nunca dejes de buscar"
+		},
+		"item_description": {
+			"BUY": "Comprar",
+			"SOLD": "vendidos",
+			"DESCRIPTION_TITLE": "Descripción del producto",
+			"ITEM_CONDITION": {
+				"new_product": "Nuevo",
+				"used_product": "Usado"
+			}
+		}
+	}
 }
