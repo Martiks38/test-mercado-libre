@@ -1,0 +1,51 @@
+.errorResponse__title {
+	font-size: 2.5rem;
+	line-height: 2.75rem;
+}
+
+.errorResponse__description {
+	font-size: 1.5rem;
+	line-height: 1.875rem;
+}
+
+.error404 {
+	margin-top: 5rem;
+	padding: 2rem 1rem;
+	background-color: #fff;
+
+	&__title {
+		margin-bottom: 1em;
+		font-size: 3rem;
+		line-height: 1;
+		text-align: center;
+	}
+
+	&__message {
+		margin-bottom: 0.4em;
+		font-size: 2.25rem;
+		line-height: 2.5rem;
+	}
+
+	&__redirect {
+		display: block;
+		margin-top: 0.8em;
+		width: fit-content;
+		font-size: 1.75rem;
+		line-height: 2.25rem;
+		color: var(--color-secondary, #2a69c8);
+		font-weight: 600;
+	}
+}
+
+@media (hover: hover) {
+	.error404__redirect:focus,
+	.error404__redirect:hover {
+		text-decoration: underline;
+	}
+}
+
+@media (hover: none) {
+	.error404__redirect {
+		text-decoration: underline;
+	}
+}
