@@ -2,20 +2,19 @@
 
 import { Suspense } from 'react'
 import { useSearchParams } from 'next/navigation'
+import { ListItems } from '@/components/ListItems'
 
 import Loading from './loading'
-import { ListItems } from '@/components/ListItems'
 
 export default function Items() {
 	const params = useSearchParams()
+	const query = params.get('search') ?? ''
 
 	return (
 		<main>
 			<Suspense fallback={<Loading />}>
-				<ListItems />
+				<ListItems query={query} />
 			</Suspense>
 		</main>
 	)
 }
-
-// https://api.mercadolibre.com/sites/MLA#json
