@@ -16,6 +16,26 @@ type ItemDescriptionProps = {
 	}
 }
 
+import { Metadata } from 'next'
+import { BASE_URL_API } from '@/assets/consts'
+
+type Props = {
+	params: { id: string }
+	searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+	const { id } = params
+
+	const product = await fetch(`${BASE_URL_API}/items/${id}`).then((res) =>
+		res.json()
+	)
+
+	return {
+		title: product.title,
+	}
+}
+
 export default async function ItemDescription({
 	params,
 }: ItemDescriptionProps) {
