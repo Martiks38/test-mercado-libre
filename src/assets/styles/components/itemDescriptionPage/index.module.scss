@@ -8,8 +8,10 @@
 	display: flex;
 
 	&__img {
-		height: 450px;
+		height: 28.125rem;
+		max-width: 34.375rem;
 		width: auto;
+		object-fit: contain;
 	}
 
 	&__descriptionTitle {
